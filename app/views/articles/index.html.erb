@@ -1,6 +1,6 @@
-<h1>Listing all Articles</h1>
+<h1 class="edit-title">Listing all Articles</h1>
 <p>
-  <%= link_to "Create new article", new_article_path %>
+  <%= link_to "Create new article", new_article_path, class: "btn btn-primary" %>
 </p>
 <table>
   <tr>
@@ -12,9 +12,9 @@
   <tr>
     <td><%= article.title %></td>
     <td><%= article.description %></td>
-    <td><%= link_to "Edit", edit_article_path(article) %> | </td>
-    <td><%= link_to "Show", article_path(article) %> | </td>
-    <td><%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure"} %></td>
+    <td><%= link_to "Edit", edit_article_path(article), class: "btn btn-primary btn-sm btn-spacing" %>    </td>
+    <td><%= link_to "Show", article_path(article), class: "btn btn-primary btn-sm .btn-spacing" %>  </td>
+    <td><%= link_to "Delete", article_path(article), class: "btn btn-danger btn-sm ", method: :delete, data: {confirm: "Are you sure"} %></td>
   </tr>
   <% end %>
 </table>

@@ -1,4 +1,4 @@
-<h1>Show Selected Article</h1>
+<h1 class="edit-title">Selected Article</h1>
 
 <p>
   Title: <%= @article.title %>
@@ -9,6 +9,6 @@
 </p>
 
 <p>
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
-  <%= link_to "Back to Articles", articles_path %>
+  <%= link_to "Edit this article", edit_article_path(@article), class: 'btn btn-primary' %>
+  <%= link_to "Back to Articles", articles_path, class: "btn btn-danger"  %>
 </p>

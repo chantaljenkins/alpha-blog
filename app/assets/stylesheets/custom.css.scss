@@ -49,7 +49,7 @@ $navbar-default-bg: black;
 }
 
 footer {
-  margin-top: 5px;
+  margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
@@ -71,4 +71,30 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+.style-buttons {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+.back {
+  float: right;
+}
+
+.edit-title {
+  border-bottom: 1px solid #eaeaea;
+  color: brown;
+
+}
+
+.alert-extra {
+  list-style: none;
+
+}
+
+.btn-spacing {
+  margin: 1px;
+  margin-right: 1px;
 }
