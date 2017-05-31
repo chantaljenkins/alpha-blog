@@ -35,6 +35,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    @article = Article.find(params[:id])
     @article.destroy
     flash[:danger] = "Article was successfully deleted"
     redirect_to articles_path
